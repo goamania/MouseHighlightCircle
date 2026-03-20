@@ -5,10 +5,42 @@ local _assert = assert
 local _tostring = tostring
 local _tonumber = tonumber
 
+local _strsub = string.sub
 local _strgsub = string.gsub
+local _strfind = string.find
 local _strupper = string.upper
 local _strlower = string.lower
-local _strmatch = string.match
+
+local _unpack = unpack
+local _tableremove = table.remove
+
+local function _strmatch(input, patternString, ...)
+    local variadicsArray = arg
+
+    _assert(patternString ~= nil, "patternString must not be nil")
+
+    if patternString == "" then
+        return nil
+    end
+
+    local results = { _strfind(input, patternString, _unpack(variadicsArray)) }
+
+    local startIndex = results[1]
+    if startIndex == nil then -- no match
+        return nil
+    end
+
+    local match01 = results[3]
+    if match01 == nil then
+        local endIndex = results[2]
+        return _strsub(input, startIndex, endIndex) -- matched but without using captures   ("Foo 11 bar   ping pong"):match("Foo %d+ bar")
+    end
+
+    _tableremove(results, 1) -- pop startIndex
+    _tableremove(results, 1) -- pop endIndex
+
+    return _unpack(results) -- matched with captures  ("Foo 11 bar   ping pong"):match("Foo (%d+) bar")
+end
 
 local _isAddonLoaded = false
 
