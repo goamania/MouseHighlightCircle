@@ -45,10 +45,8 @@ function MHC:RebuildRing()
 
     for i = 1, numTiles do
         local theta = (i - 1) * TWO_PI / numTiles
-        local x = midR * math.cos(theta) - thickness / 2
-        local y = midR * math.sin(theta) - thickness / 2
         local tile = CreateTile(thickness)
-        tile:SetPoint("TOPLEFT", frame, "TOPLEFT", x, y)
+        tile:SetPoint("CENTER", frame, "CENTER", midR * math.cos(theta), -midR * math.sin(theta))
         tinsert(self.ringPieces, tile)
     end
 
