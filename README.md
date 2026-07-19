@@ -49,8 +49,9 @@ Go to **Key Bindings** → **MouseHighlightCircle** → **Toggle Circle** to ass
 
 ## Compatibility
 
-- Designed for Turtle WoW (Vanilla WoW 1.12.1 client).
-- May work on other 1.12.1-based servers (untested).
+- ✅ **Ascension WoW** — fully compatible (Interface 30300). Tested.
+- ✅ **Turtle WoW** (Vanilla 1.12.1) — fully compatible. Tested.
+- May work on other 1.12.1 / 3.3.5-based servers.
 
 ## Contributing
 
