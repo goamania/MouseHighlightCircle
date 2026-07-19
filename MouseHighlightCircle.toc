@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: MouseHighlightCircle
+## Notes: Adds a customizable ring around the mouse cursor. /mhc for options.
+## Author: goamania
+## Version: 2.0
+## SavedVariables: MouseHighlightCircleDB
+MouseHighlightCircle.lua
