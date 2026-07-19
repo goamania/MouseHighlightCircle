@@ -1,6 +1,6 @@
 # MouseHighlightCircle
 
-A lightweight addon for **Turtle WoW (1.12.1)** that adds a pixelated white ring around your mouse cursor. Fully customizable — size, color, alpha, combat-only mode, and more.
+A lightweight addon for **Turtle WoW (1.12.1) / Ascension WoW** that adds a pixelated white ring around your mouse cursor. Fully customizable — size, color, alpha, combat-only mode, and more.
 
 ## Features
 
@@ -14,14 +14,13 @@ A lightweight addon for **Turtle WoW (1.12.1)** that adds a pixelated white ring
 - **Keybinding support**: Bind a key to toggle the ring (Key Bindings → MouseHighlightCircle → Toggle Circle)
 - **Settings persist** across sessions (SavedVariables)
 - Slash commands: `/mhc show`, `/mhc hide`, `/mhc toggle`
-- Lightweight and optimized for Turtle WoW's 1.12.1 client
+- Lightweight and optimized for Turtle WoW (1.12.1) and Ascension WoW (3.3.5)
 
 ## Installation
 
 1. Download the latest release.
 2. Extract `MouseHighlightCircle` into `World of Warcraft/Interface/AddOns/`.
-3. Ensure `pixelring.tga` is in the addon folder.
-4. Launch Turtle WoW, enable the addon, and log in.
+3. Launch the game, enable the addon, and log in.
 5. Use `/mhc show` or `/mhc toggle` in-game.
 
 ## Slash Commands
@@ -39,10 +38,6 @@ A lightweight addon for **Turtle WoW (1.12.1)** that adds a pixelated white ring
 | `/mhc mount` | Toggle auto-hide while mounted |
 | `/mhc status` | Show current settings |
 
-## Texture
-
-The addon uses `pixelring.tga` (64x64) for the ring effect. Replace it with your own design (same dimensions, transparent center).
-
 ## Keybinding
 
 Go to **Key Bindings** → **MouseHighlightCircle** → **Toggle Circle** to assign a hotkey.
@@ -59,7 +54,7 @@ Fork and submit pull requests! Open an issue for bugs or suggestions.
 
 ## Credits
 
-Developed by goamania for the Turtle WoW community.
+Developed by goamania for the Turtle WoW / Ascension WoW community.
 
 ## License
 
